@@ -1,6 +1,8 @@
 package model
 
-import "github.com/kamva/mgm/v3"
+import (
+	"github.com/kamva/mgm/v3"
+)
 
 //Car model
 type Car struct{

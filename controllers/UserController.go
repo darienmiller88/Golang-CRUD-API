@@ -126,8 +126,8 @@ func (u *UserController) updateUser(res http.ResponseWriter, req *http.Request){
 	user := bson.M{}
 
 	if err != nil{
-	   utilities.SendJSON(http.StatusBadRequest, res, bson.M{"message":  "invalid id"})
-	  return
+		utilities.SendJSON(http.StatusBadRequest, res, bson.M{"message":  "invalid id"})
+	  	return
 	}
 
 	json.NewDecoder(req.Body).Decode(&user)
